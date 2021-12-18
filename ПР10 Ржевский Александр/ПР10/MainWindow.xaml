@@ -1,0 +1,27 @@
+﻿<Window x:Class="Practos_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practos_10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Button Content="Расчет" Click="calculation_button" HorizontalAlignment="Left" Margin="117,268,0,0" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.51,0.53" Height="31"/>
+        <ListBox x:Name="listBox1"   Margin="117,73,556,242"/>
+        <TextBox HorizontalAlignment="Left" Margin="117,202,0,0" TextWrapping="Wrap" Text="" x:Name="valueList" VerticalAlignment="Top" Width="119" Height="30"/>
+        <Button Content="Перерасчет " HorizontalAlignment="Left" Margin="419,315,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="number" HorizontalAlignment="Left" Margin="402,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <GroupBox Header="Првктическая работа №10" HorizontalAlignment="Left" Height="346" VerticalAlignment="Top" Width="589" Margin="10,30,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="782" Margin="0,-15,0,0"/>
+<Menu VerticalAlignment="Top">
+                <MenuItem Header="Файл">
+                    <MenuItem Header="Очистить список" Click="Clear_Click"/>
+                    <Separator/>
+                    <MenuItem Header="Выход" Click="Exit_Click"/>
+                </MenuItem>
+                <MenuItem Header="Справка" Click="Information_Click"/>
+            </Menu>
+    </Grid>
+</Window>
